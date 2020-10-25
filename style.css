@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@600&display=swap');
+body {
+ background-image: url("./images/frankfurtmain.jpg");
+ background-color: black;
+ background-attachment: fixed;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-color: black;
+ background-width: 100%;
+ font-family: 'Oxygen', sans-serif;
+}
+
+h1 {
+font-family: 'Noto Serif JP', serif;
+}
+
+h3 {
+font-family: 'Noto Serif JP', serif;
+}
+
+#quizText{
+  background-color: hsla(180, 60%, 80%, 0.8);
+  border: 10px black ;
+  border-radius: 10px;
+  padding: 20px;
+  color: black;
+  width: 80%;
+  margin: auto;
+}
+
+#btn {
+  border-radius: 5px;
+  margin: 20px;
+
+}
+
+ .on  { display: inline; }
+ .off { display: none; }
+
+ #tipSliders {
+   text-align: center;
+   background-color: hsla(180, 60%, 80%, 0.8);
+   border-width: 10px;
+   border-radius: 10px;
+   border-color: black;
+   padding-top: 5px;
+   padding-bottom: 20px;
+   color: black;
+   width: 80%;
+   margin: 20px auto;
+ }
+
+ #tip1 {
+   text-align: center;
+   background-color: hsla(180, 60%, 80%, 0.8);
+   border-width: 10px;
+   border-radius: 10px;
+   border-color: black;
+   padding: 20px;
+   color: black;
+   width: 80%;
+   margin: 20px auto;
+ }
+
+ #tip2 {
+   text-align: center;
+   background-color: hsla(180, 60%, 80%, 0.8);
+   border-width: 10px;
+   border-radius: 10px;
+   border-color: black;
+   padding: 20px;
+   color: black;
+   width: 80%;
+   margin: 20px auto;
+ }
+
+ #tip3 {
+   text-align: center;
+   background-color: hsla(180, 60%, 80%, 0.8);
+   border-width: 10px;
+   border-radius: 10px;
+   border-color: black;
+   padding: 20px;
+   color: black;
+   width: 80%;
+   margin: 20px auto;
+ }
+
+ #navBar {
+   color: white;
+   background-color: black;
+   padding: 5px 5px;
+   margin-bottom: 10px;
+   font-family: 'Noto Serif JP', serif;
+ }
+
+
+
+ .incorrect {
+   background-color: hsl(0, 90%, 60%);
+ }
+
+
+
+ table {
+   border-radius: 10px;
+   background-color: hsl(0, 60%, 80%);
+   padding: 10px;
+   border-color: black;
+   border-width: 10px;
+   margin: auto;
+   overflow: scroll;
+
+ }
+
+th {
+ background-color: hsl(180, 80%, 60%);
+ padding: 10px;
+ width: 90px;
+}
+td {
+ background-color: hsl(180, 60%, 80%);
+ padding: 10px;
+ width: 90px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+ position: relative;
+ display: inline-block;
+ width: 60px;
+ height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+ opacity: 0;
+ width: 0;
+ height: 0;
+}
+
+/* The slider */
+.slider {
+ position: absolute;
+ cursor: pointer;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background-color: #ccc;
+ -webkit-transition: .4s;
+ transition: .4s;
+}
+
+.slider:before {
+ position: absolute;
+ content: "";
+ height: 26px;
+ width: 26px;
+ left: 4px;
+ bottom: 4px;
+ background-color: white;
+ -webkit-transition: .4s;
+ transition: .4s;
+}
+
+input:checked + .slider {
+ background-color: #2196F3;
+}
+
+input:focus + .slider {
+ box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+ -webkit-transform: translateX(26px);
+ -ms-transform: translateX(26px);
+ transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+ border-radius: 34px;
+}
+
+.slider.round:before {
+ border-radius: 50%;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}

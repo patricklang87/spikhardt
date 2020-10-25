@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+<title>Familie Spikhardt: Bestimmte Artikel</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+  </head>
+
+  <body>
+<script src="index.js"></script>
+<div id="navBar">
+  <h3>Lang Deutsche Grammatik</h3>
+
+</div>
+
+<div id="quizText">
+<h1>Familie Spikhardt in Frankfurt</h1>
+<h3>Welche Schweinereien richten die Spikhardt-Kinder in Frankfurt an? Geben Sie die passenden bestimmten Artikel in die Kästen ein.</h3>
+<p>Mathilde Spikhardt bleibt in <input type="text" id="der1" size="3" /> Bahnhofstraße (f.). Dort steht sie an <input type="text" id="der2" size="3"/>  Tür (f.) eines Starbucks-Cafés und verkauft lose Zigaretten an <input type="text" size="3" id="die1"/> vorbeilaufenden Touristen. (Pl.)</p>
+<p>Ingrid Spikhardt geht in <input type="text" size="3" id="das1"/> Naturhistorische Museum (n.). In <input type="text" size="3" id="der3"/> Säugetier-Ausstellung (f.) klettert sie auf <input type="text" size="3" id="das2"/> Skelett (n.) eines prähistorischen Riesenfaultiers. Sie sagt <input type="text" size="3" id="den1"/> anderen Gästen (Pl.), dass sie eine Eingestellte <input type="text" size="3" id="des1" /> Museums ist.</p>
+<p>Ronnie schleicht in <input type="text" size="3" id="die2"/> Europäische Zentralbank (f.) ein. Dort hebt er <input type="text" size="3" id="die3"/> Inflationsrate (f.) im Euroraum auf 15 Prozent und verursacht <input type="text" size="3" id="der4"/> europäischen Wirtschaft (f.) nie wiedergutzumachende Schäden.
+</p>
+<input type="button" id="submit" value="Einrechen" onclick="scoreQuiz()" />
+<button id="refresh001" onclick="location.reload();" class="off">Seite neu laden</button>
+<div id="results"></div>
+</div>
+
+<div id="tipSliders">
+  <h3>Grammatikhilfe</h3>
+<table>
+  <tr>
+  <th>Bestimmte Artikel</th>
+  <th>Unbestimmte Artikel</th>
+  <th>Wechsel- Präpositionen</th>
+</tr>
+<tr>
+  <td>
+<label class="switch">
+  <input type="checkbox" onclick="toggleState1()">
+  <span class="slider round"></span>
+</label>
+</td>
+<td>
+<label class="switch">
+<input type="checkbox" onclick="toggleState2()">
+<span class="slider round"></span>
+</label>
+</td>
+<td>
+<label class="switch">
+<input type="checkbox" onclick="toggleState3()">
+<span class="slider round"></span>
+</label>
+</td>
+</tr>
+</table>
+</div>
+
+    <div id="bestimmteArtikel" class="off">
+      <div id="tip1">
+        <h1>Die bestimmten Artikel</h1>
+        <h3>“REE SEE NEE SEE MER MAN SIR SIR”</h3>
+        <p>Vergessen Sie nicht, dass Sie die Eselsbrücke RESE NESE MRMN SRSR benutzen können, um sich den letzten Buchstabe jedes Artikels zu merken.</p>
+        <table>
+          <tr>
+            <th>Case</th>
+            <th>Nominativ</th>
+            <th>Akkusativ</th>
+            <th>Dativ</th>
+            <th>Genitiv</th>
+          </tr>
+          <tr>
+            <th>Maskulin</th>
+            <td>de<strong>r</strong></td>
+            <td>de<strong>n</strong></td>
+            <td>de<strong>m</strong></td>
+            <td>de<strong>s</strong></td>
+          </tr>
+          <tr>
+            <th>Feminin</th>
+            <td>di<strong>e</strong></td>
+            <td>di<strong>e</strong></td>
+            <td>de<strong>r</strong></td>
+            <td>de<strong>r</strong></td>
+          </tr>
+          <tr>
+            <th>Neutrum</th>
+            <td>da<strong>s</strong></td>
+            <td>da<strong>s</strong></td>
+            <td>de<strong>m</strong></td>
+            <td>de<strong>s</strong></td>
+          </tr>
+          <tr>
+            <th>Plural</th>
+            <td>di<strong>e</strong></td>
+            <td>di<strong>e</strong></td>
+            <td>de<strong>n</strong></td>
+            <td>de<strong>r</strong></td>
+          </tr>
+        </table>
+    </div>
+  </div>
+
+
+    <div id="unbestimmteArtikel" class="off">
+      <div id="tip2">
+        <h1>Die unbestimmten Artikel</h1>
+        <h3>“BLANKY BLANKY ANY BLANKY! MER MAN SIR SIR”</h3>
+        <p>Vergessen Sie nicht, dass Sie die Eselsbrücke Blank E Blank E N E Blank E MRMN SRSR benutzen können, um sich den letzten Buchstabe jedes Artikels zu merken.</p>
+        <table>
+          <tr>
+            <th>Case</th>
+            <th>Nominativ</th>
+            <th>Akkusativ</th>
+            <th>Dativ</th>
+            <th>Genitiv</th>
+          </tr>
+          <tr>
+            <th>Maskulin</th>
+            <td>ein<strong> --</strong></td>
+            <td>ein<strong>en</strong></td>
+            <td>ein<strong>em</strong></td>
+            <td>ein<strong>es</strong></td>
+          </tr>
+          <tr>
+            <th>Feminin</th>
+            <td>ein<strong>e</strong></td>
+            <td>ein<strong>e</strong></td>
+            <td>ein<strong>er</strong></td>
+            <td>ein<strong>er</strong></td>
+          </tr>
+          <tr>
+            <th>Neutrum</th>
+            <td>ein<strong> --</strong></td>
+            <td>ein<strong> --</strong></td>
+            <td>ein<strong>em</strong></td>
+            <td>ein<strong>es</strong></td>
+          </tr>
+          <tr>
+            <th>Plural</th>
+            <td>kein<strong>e</strong></td>
+            <td>kein<strong>e</strong></td>
+            <td>kein<strong>en</strong></td>
+            <td>kein<strong>er</strong></td>
+          </tr>
+        </table>
+
+    </div>
+  </div>
+
+  <div id="waechselpraepositionen" class="off">
+    <div id="tip3">
+      <h1>Die Wechselpräpositionen</h1>
+      <h3>IN - AN - AUF - UNTER - ÜBER - VOR - HINTER - ZWISCHEN - NEBEN</h3>
+      <p>Auf die neun Wechselpräpositionen folgt entweder der Dativ oder der Akkusativ, je nachdem, ob die Präposition eine Bewegungsrichtung oder einen Standort angibt.</p>
+      <table>
+        <tr>
+          <th>Accusative</th>
+          <td>Movement from outside of a position into a position</td>
+          <th>Dative</th>
+          <td>Location in a position or movement <em>within</em> a position.</td>
+        </tr>
+      </table>
+      <br>
+      <img src="images/wechselpraep.jpg" alt="Accusative vs Dative Two-Way Prepositions">
+
+  </div>
+</div>
+
+  </body>
+
+</html>
