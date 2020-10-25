@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@600&display=swap');
 body {
- background-image: url("./images/frankfurtmain.jpg");
+ background-image: url("../images/frankfurtmain.jpg");
  background-color: black;
  background-attachment: fixed;
  background-position: center;
  background-repeat: no-repeat;
- background-color: black;
- background-width: 100%;
  font-family: 'Oxygen', sans-serif;
 }
 
